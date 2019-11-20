@@ -4,7 +4,9 @@ Kamu diberikan arahan untuk menginvestigasi printer dari seorang warga negara In
 
 Diberikan sebuah printerlog
 <br><br>
-(GAMBAR)
+<p align="center">
+<img src="https://github.com/laBigby/cscctf-foren2/blob/master/201.JPG">
+</p>
 <br><br>
 Terdapat 262144 entry di dalam log tersebut, dan di setiap entry terdapat 3 value yang yang dipisahkan oleh koma<br>
 Ketiga value tersebut merupakan RGB value, kita harus merangkai gambar yang dimaksud pixel by pixel sesuai dengan RGB value di setiap entry<br>
@@ -28,7 +30,9 @@ for i in range(0,512):<br>
 		pixel[j,i] = (x[k][1], x[k][2], x[k][3])<br>
 		k+=1<br>
 gbr.save("new.jpg")<br><br>
-(GAMBAR2)
+<p align="center">
+<img src="https://github.com/laBigby/cscctf-foren2/blob/master/new.jpg">
+</p>
 <br><br>
 Dapat di scan QR code nya dan didapatkan flag di google drive
 <br>
